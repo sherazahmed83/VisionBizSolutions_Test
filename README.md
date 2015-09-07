@@ -1,5 +1,9 @@
 # VisionBizSolutions_Test
-
+<br/>
+<br/>
+<h2>NOTE</h2>: This project is to show the exploring activity of Technologies listed below, and not intended to use this code anywhere else. So please do not copy this code and use it with your own name.
+<br/>
+<br/>
 This project is to show the exploration of usage of some Java Serverside technologies including<br/>
 1- Spring (Spring Java Based Configuration, Spring MVC, Spring MVC with Rest based service integration)<br/>
 2- JPA<br/>
