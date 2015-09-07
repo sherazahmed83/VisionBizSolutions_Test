@@ -1,0 +1,77 @@
+﻿<html lang="en"><!-- saved from url=(0014)about:internet -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Glossary</title>
+<script type="text/javascript" language="JavaScript">
+var RH_BreadCrumbDataStringVariable="";
+
+function HideAllExpandedItemInRHUnique()
+{
+	var divTagArr = document.getElementsByTagName("div");
+	if(divTagArr!=null && divTagArr.length>0)
+	{
+		for(index=0;index<divTagArr.length;index++)
+		{
+			var divitem = divTagArr[index];
+			var sectionID = divitem.getAttribute("id");
+			if(sectionID==null || sectionID.length<=0)
+				continue;
+			var ID = sectionID.substring(7);
+			var imageID = "Image" + ID;
+			show_hide(sectionID,imageID);
+		}
+	}
+}
+
+function show_hide(sectionid, imageid)
+{
+	var show;
+	if (el = document.getElementById(sectionid))
+	{
+		show = el.style.display=='none';
+		el.style.display = (show ? '' : 'none');
+	}
+	if (img = document.getElementById(imageid))
+	{
+		img.src = (show ? 'TreeViewMinus_icon.png' : 'TreeViewPlus_icon.png');
+	}
+}
+
+function getParameterValue( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( this.window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+
+function SetCurrentLevel(newLevel)
+{
+    var fn = "this.parent.document.getElementById('flash').SetCurrentGlossaryLevel('"+newLevel+"');";
+    setTimeout(fn,1);
+}
+
+function OnLoadGlossaryFn()
+{
+	//this is where we will try to find the parameters of the url
+	var currentLevel = getParameterValue('currentlevel');
+	//we need to tell flash the current level
+	SetCurrentLevel(currentLevel);
+}
+
+function updateHTMLBodyContents(newVal)
+{
+	this.document.body.innerHTML = newVal;
+	HideAllExpandedItemInRHUnique();
+}
+
+</script>
+</head>
+<body onLoad="javascript:OnLoadGlossaryFn();" bgcolor="#FFFFFF">
+</body>
+</html>

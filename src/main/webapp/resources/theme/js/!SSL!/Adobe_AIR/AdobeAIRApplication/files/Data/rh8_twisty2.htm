@@ -1,0 +1,533 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<html lang="en"><!-- saved from url=(0014)about:internet -->
+
+
+<!-- 
+Smart developers always View Source. 
+
+This application was built using Adobe Flex, an open source framework
+for building rich Internet applications that get delivered via the
+Flash Player or to desktops via Adobe AIR. 
+
+Learn more about Flex at http://flex.org 
+// -->
+
+<head>
+<META HTTP-EQUIV="Expires" CONTENT="Mon, 04 Dec 1999 21:29:02 GMT"/>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE"/>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8" />
+
+<!--  BEGIN Browser History required section -->
+<!--<link rel="stylesheet" type="text/css" href="history/history.css" />-->
+<!--  END Browser History required section -->
+
+<title></title>
+<script src="AC_OETags.js" language="javascript" type="text/javascript"></script>
+<script src="whver.js" language="javascript" type="text/javascript"></script>
+
+<!--  BEGIN Browser History required section -->
+<!--<script src="history/history.js" language="javascript" type="text/javascript"></script>-->
+<!--  END Browser History required section -->
+
+<style type="text/css">
+body { margin: 0px; overflow:hidden }
+</style>
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 9;
+// Minor version of Flash required
+var requiredMinorVersion = 0;
+// Minor version of Flash required
+var requiredRevision = 28;
+// -----------------------------------------------------------------------------
+// -->
+var gbAIRmergeProjectArray=null;
+
+function getFramefromID(frameID)
+{
+    var frameRef=document.getElementById("myFrame"+frameID);
+    if(frameRef==null)
+    {
+    	frameRef = document.createElement('div');
+		frameRef.setAttribute('id','myFrame'+frameID);
+		frameRef.style.position = "absolute";
+		frameRef.style.backgroundColor = "transparent";
+		frameRef.style.border= "0px";
+		frameRef.style.visibility = "hidden";
+		//frameRef.setAttribute("style","position:absolute;background-color:transparent;border:0px;visibility:hidden;"); 
+		myBody.appendChild(frameRef);
+    }
+    return frameRef;
+}
+function getIFrameFromID(frameID)
+{
+	var newFrameID = 'myIFrame'+frameID;
+    var iFrameRef=document.getElementById(newFrameID);    
+	return iFrameRef;
+}
+
+function StartHighLightSearch(frameID,szHighLightSearchString)
+{
+    var iFrameRef=getIFrameFromID(frameID);
+    if(iFrameRef!=null && iFrameRef.contentWindow && iFrameRef.contentWindow.StartHighLightSearch!=null)
+    {
+    	iFrameRef.contentWindow.StartHighLightSearch(szHighLightSearchString);
+    }
+}
+
+function moveIFrame(frameID,x,y,w,h) 
+{
+    var frameRef=getFramefromID(frameID);
+    if(frameRef!=null)
+    {
+	    frameRef.style.left=x;
+	    frameRef.style.top=y;
+	    frameRef.width=w;
+	    frameRef.height=h;
+	    var iFrameRef=getIFrameFromID(frameID);
+	    if(iFrameRef!=null)
+	    {    
+		    iFrameRef.style.left=x;
+		    iFrameRef.style.top=y;
+		    iFrameRef.width=w;
+		    iFrameRef.height=h;
+		}
+	}
+}
+
+function updateHTMLBodyContents(frameID,contents)
+{
+	try
+	{
+	    var iFrameRef=getIFrameFromID(frameID);
+	    if(iFrameRef!=null)
+	    {
+	    	iFrameRef.contentWindow.updateHTMLBodyContents(contents);
+	    }
+	}
+	catch(err){}
+}
+
+function hideIFrame(frameID)
+{
+    var frameRef=getFramefromID(frameID);
+    frameRef.style.visibility="hidden";
+    frameRef.width=0;
+    frameRef.height=0;
+}
+
+function removeFrame(frameID)
+{
+	 var frameRef=getFramefromID(frameID);
+	 //we need to remove all child of this frame.
+	 while(frameRef.hasChildNodes())
+		{
+	  		frameRef.removeChild(frameRef.firstChild);
+		}
+	//in the end remove the frame from its body
+	myBody.removeChild(frameRef);
+}    
+
+function showIFrame(frameID)
+{
+    var frameRef=getFramefromID(frameID);
+    frameRef.style.visibility="visible";
+    frameRef.focus();
+}
+
+function GetFrameTitle(iFrameRef)
+{
+	var title="";
+	try
+	{
+		title = iFrameRef.contentWindow.document.title;
+		if(title==undefined)
+			title="";
+	}
+	catch(err){}
+	return escape(title);
+}
+
+function GetFrameLocation(iFrameRef)
+{
+	var location="";
+	try
+	{
+		location = iFrameRef.contentWindow.location.href;
+		if(location==undefined)
+			location="";
+	}
+	catch(err){}
+	return escape(location);
+}
+
+function GetFrameBreadCrumb(iFrameRef)
+{
+	var RH_BreadCrumbDataStringVariable="";
+	try
+	{
+		RH_BreadCrumbDataStringVariable = iFrameRef.contentWindow.RH_BreadCrumbDataStringVariable;
+		if(RH_BreadCrumbDataStringVariable==undefined)
+			RH_BreadCrumbDataStringVariable="";
+	}
+	catch(err){}
+	return escape(RH_BreadCrumbDataStringVariable);
+}
+
+function GetFrameBrowseSequenceBack(iFrameRef)
+{
+	var location="";
+	try
+	{
+		location = iFrameRef.contentWindow.flex_previousLocation;
+		if(location==undefined)
+			location="";
+	}
+	catch(err){}
+	return escape(location);
+}
+
+function GetFrameBrowseSequenceForward(iFrameRef)
+{
+	var location="";
+	try
+	{
+		location = iFrameRef.contentWindow.flex_nextLocation;
+		if(location==undefined)
+			location="";
+	}
+	catch(err){}
+	return escape(location);
+}
+
+function GetFrameRelativePath(iFrameRef)
+{
+	var location="";
+	try
+	{
+		location = iFrameRef.contentWindow.gsRelCurPagePath;
+		if(location==undefined)
+			location="";
+		
+	}
+	catch(err){}
+	return escape(location);
+}
+
+function OnLoadIFrameFn(frameID)
+{
+    var iFrameRef=getIFrameFromID(frameID);   
+    var title = GetFrameTitle(iFrameRef);
+    var breadCrumbString = GetFrameBreadCrumb(iFrameRef);
+    var newLocation = GetFrameLocation(iFrameRef);
+    var previous = GetFrameBrowseSequenceBack(iFrameRef);
+    var next = GetFrameBrowseSequenceForward(iFrameRef);
+    var relativepath = GetFrameRelativePath(iFrameRef);
+    
+    if(breadCrumbString==null)
+    	breadCrumbString = '';
+    var fn = "document.getElementById('flash').SetIFrameValues"+frameID+"('"+title+"','"+breadCrumbString+"','"+newLocation+"','"+previous+"','"+next+"','"+relativepath+"');";
+	setTimeout(fn,1);
+}
+
+function PassSubstringParamPresentInLocation()
+{
+	var substr = location.hash; 
+	var fn = "document.getElementById('flash').SetSubstringParamPresentInLocation('" +  substr + "');" ;
+	setTimeout(fn,1);
+}
+
+function GetMainLocation()
+{
+	var strLocation = document.location.href;
+	var nHashPos = strLocation.indexOf('#');
+	if(nHashPos != -1)
+	{
+		strLocation = strLocation.substring(0 , nHashPos);
+	}
+	return strLocation;
+}
+
+function SetTitle(strTitle)
+{
+	document.title = strTitle;
+}
+
+function GetTitle(strTitle)
+{
+	return document.title;
+}
+
+var goNewWnd;
+var gsURL;
+
+function postWindowOpen()
+{
+	if(goNewWnd)
+	{
+		if (gsURL)
+			goNewWnd.document.location.href=gsURL;
+		document.location.href = "about:blank";
+		goNewWnd.focus();
+	}
+}
+
+
+function OpenWindowForCsh(sURL, sNewName, strOpt)
+{
+	if(gbNav4 || gbSafari)
+	{
+		if (gbNav6)
+		{
+			gsURL = sURL;
+			goNewWnd=window.open("about:blank",sNewName,strOpt);
+			setTimeout("postWindowOpen();",100);
+		}
+		else
+		{
+			window.open("about:blank",sNewName,strOpt);
+			goNewWnd = window.open(sURL,sNewName);
+			if(goNewWnd!=null && goNewWnd != undefined)
+			{
+				goNewWnd.focus();
+				window.close();
+			}
+		}
+	}
+	else
+	{
+		if(gbIE5)
+		{
+			goNewWnd = window.open("about:blank",sNewName,strOpt);
+			if(goNewWnd)
+			{
+				goNewWnd.document.location.href="about:blank";
+				goNewWnd=window.open(sURL,sNewName);
+			}
+		}
+		else
+		{
+			gsURL = sURL; // IE4 had hard time to handle bookmark.
+			goNewWnd=window.open("about:blank",sNewName,strOpt);
+		}
+		setTimeout("postWindowOpen();",100);
+	}
+
+	if(goNewWnd == null || goNewWnd == undefined)
+	{
+		if(sURL.indexOf("#") == 0)
+		   sURL = "?" + sURL; 	
+		window.location = sURL;
+	}
+}
+
+function CloseMainBrowserWndNow()
+{
+	if(window.opener == null || window.opener == undefined )
+		window.opener = self;
+	
+	window.close();
+}
+
+function CloseParentWndNow()
+{
+	if(parent)
+	{
+		if(parent.opener == undefined || parent.opener == null )
+			parent.opener = self;
+		parent.close();
+	}
+}
+
+function UpdateMergeProjectArray(projectArray)
+{
+	gbAIRmergeProjectArray = projectArray;
+}
+
+function loadIFrame(frameID,url)
+{
+    var iFrameRef=getIFrameFromID(frameID);
+    if(iFrameRef==null)
+    {
+		var newFrameID = 'myIFrame'+frameID;
+		var onLoadFn = " onLoad='OnLoadIFrameFn("+frameID+")' ";
+		var framename = " name= '"+newFrameID+"' ";
+		var szTemp = "<iframe "+onLoadFn+framename+"id='"+newFrameID+"' src='" + url + "'frameborder='0'></iframe>";
+	    getFramefromID(frameID).innerHTML = szTemp;
+	    iFrameRef=getIFrameFromID(frameID);
+	}
+	
+    if(iFrameRef!=null)
+	{
+		iFrameRef.contentWindow.location.href = url;
+	}
+}
+
+function CheckIsIE()
+{
+	if (navigator.appName.toUpperCase() == 'MICROSOFT INTERNET EXPLORER') 
+	{ return true;}
+	else { return false; }
+} 
+
+function printThisPage(frameID)
+{
+	var newFrameID = 'myIFrame'+frameID;
+	var func = '';
+	if (CheckIsIE() == true)
+	{
+		func = "document."+newFrameID+".focus();";
+		func += "document."+newFrameID+".print();";
+	}
+	else
+	{
+		func = "window.frames['"+newFrameID+"'].focus();";
+		func += "window.frames['"+newFrameID+"'].print();";
+	} 
+	setTimeout(func,1);
+}
+
+function moveIFrameBack(frameID)
+{
+    var iFrameRef=getIFrameFromID(frameID);    
+	var win = iFrameRef.contentWindow; 
+	win.history.back();
+}
+    
+function moveIFrameForward(frameID)
+{
+    var iFrameRef=getIFrameFromID(frameID);    
+	var win = iFrameRef.contentWindow; 
+	win.history.forward();
+}
+
+</script>
+</head>
+
+<body scroll="no" id="myBody">
+<script language="JavaScript" type="text/javascript">
+<!--
+// Version check for the Flash Player that has the ability to start Player Product Install (6.0r65)
+var hasProductInstall = DetectFlashVer(9, 0, 0);
+
+// Version check based upon the values defined in globals
+var hasRequestedVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+
+if ( hasProductInstall && !hasRequestedVersion ) {
+	// DO NOT MODIFY THE FOLLOWING FOUR LINES
+	// Location visited after installation is complete if installation is required
+	var MMPlayerType = (isIE == true) ? "ActiveX" : "PlugIn";
+	var MMredirectURL = window.location;
+    document.title = document.title.slice(0, 47) + " - Flash Player Installation";
+    var MMdoctitle = document.title;
+
+	AC_FL_RunContent(
+		"codebase","http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0",
+		"src", "playerProductInstall",
+		"FlashVars", "MMredirectURL="+MMredirectURL+'&MMplayerType='+MMPlayerType+'&MMdoctitle='+MMdoctitle+"",
+		"width", "100%",
+		"height", "100%",
+		"align", "middle",
+		"id", "flash",
+		"quality", "high",
+		"bgcolor", "#869ca7",
+		"name", "flexproj",
+		"allowScriptAccess","sameDomain",
+		"type", "application/x-shockwave-flash",
+		"pluginspage", "http://www.adobe.com/go/getflashplayer"
+	);
+} else if (hasRequestedVersion) {
+	// if we've detected an acceptable version
+	// embed the Flash Content SWF when all tests are passed
+	var bCsh = false;
+	if (location.hash.length > 1)
+	{
+		var sParam = location.hash;
+		sParam = sParam.replace(/%3c/gi,"<");
+		if (sParam.indexOf("#<") == 0)
+		{
+			bCsh = true;
+		}
+	}
+	if(bCsh)
+	{
+		
+		AC_FL_RunContent(
+			"codebase","http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0",
+			"src", "CshApp",
+			"width", "5",
+			"height", "5",
+			"align", "middle",
+			"id", "flash",
+			"quality", "low",
+			"bgcolor", "#444444",
+			"name", "CshApp",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer",
+			"wmode", "opaque"
+		);
+	}
+	else
+	{
+	
+		AC_FL_RunContent(
+			"codebase","http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0",
+			"src", "flexproj",
+			"width", "100%",
+			"height", "100%",
+			"align", "middle",
+			"id", "flash",
+			"quality", "high",
+			"bgcolor", "#869ca7",
+			"name", "flexproj",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer",
+			"wmode", "opaque"
+		);
+	}
+  } else {  // flash is too old or we can't detect the plugin
+	AC_FL_RunContent(
+			"codebase","http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0",
+			"src", "flexproj",
+			"width", "100%",
+			"height", "100%",
+			"align", "middle",
+			"id", "flash",
+			"quality", "high",
+			"bgcolor", "#869ca7",
+			"name", "flexproj",
+			"allowScriptAccess","sameDomain",
+			"type", "application/x-shockwave-flash",
+			"pluginspage", "http://www.adobe.com/go/getflashplayer",
+			"wmode", "opaque"
+	);
+  }
+// -->
+</script>
+<noscript>
+  	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+			id="flash" width="100%" height="100%"
+			codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0">
+			<param name="movie" value="flexproj.swf" />
+			<param name="quality" value="high" />
+			<param name="bgcolor" value="#869ca7" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<embed src="flexproj.swf" quality="high" bgcolor="#869ca7"
+				width="100%" height="100%" name="flexproj" align="middle"
+				play="true"
+				loop="false"
+				quality="high"
+				allowScriptAccess="sameDomain"
+				type="application/x-shockwave-flash"
+				pluginspage="http://www.adobe.com/go/getflashplayer">
+				wmode="opaque"
+			</embed>
+	</object>
+</noscript>
+</body>
+</html>

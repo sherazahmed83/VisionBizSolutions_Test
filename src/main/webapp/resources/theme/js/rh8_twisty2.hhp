@@ -1,0 +1,40 @@
+﻿[OPTIONS]
+Compiled File=rh8_twisty2.chm
+Title=rh8_twisty2
+Contents File=rh8_twisty.hhc
+Index File=rh8_twisty.hhk
+Default topic=
+Default Window=
+Error log file=
+Display compile progress=No
+Display compile notes=No
+Full-text search=Yes
+Binary Index=Yes
+Auto Index=No
+Enhanced decompilation=No
+Binary TOC=No
+Flat=No
+
+[WINDOWS]
+
+[FILES]
+twisties_show_hide.htm
+images1\arrowdown.gif
+images2\arrowdown.gif
+images2\arrowright.gif
+images1\btnhideall.gif
+RoboHHRE.lng
+twisty2b.js
+
+rh8_twisty.glo
+rh8_twisty2.brs
+[ALIAS]
+#include rh8_twisty2.ali
+
+[MAP]
+#include BSSCDefault.h
+
+[TEXT POPUPS]
+BSSCDefault.h
+
+

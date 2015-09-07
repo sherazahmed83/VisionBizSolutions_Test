@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<!--Printed Documentation Layout-->
+<printdoclayout version="2">
+  <temphistory/>
+ <stylemapping>
+   <templatefile type="msword" filename="Style Mapping_RH8.dot"/>
+  <maps>
+    <item org="a.dropspot" new="Drop-down hotspot"/>
+    <item org="a.expandspot" new="Expanding hotspot"/>
+    <item org="a.glossterm" new="Glossary term"/>
+    <item org="a.popupspot" new="Text-only popup hotspot"/>
+    <item org="a:link" new="\-86"/>
+    <item org="div" new="\0"/>
+    <item org="div.droptext" new="Drop-down text"/>
+    <item org="p" new="\-1"/>
+    <item org="p.breadcrumbs" new="\0"/>
+    <item org="p.caption" new="\-35"/>
+    <item org="p.emphasisteal" new="EmphasisTeal"/>
+    <item org="p.normal-indent" new="\-29"/>
+    <item org="p.normal-single" new="Single"/>
+    <item org="p.tableheading" new="TableHeading"/>
+    <item org="p.tabletext" new="Table Text"/>
+    <item org="p.unresolvedissue" new="\0"/>
+    <item org="span.expandtext" new="Expanding text"/>
+    <item org="span.glosstext" new="Glossary text"/>
+  </maps>
+ </stylemapping>
+ <tocstructure>
+   <page name="Twisties and Show/Hide" topic="twisties_show_hide.htm" flags="0" topicid="-1"/>
+ </tocstructure>
+  <sectionhistory/>
+ <sectionlist>
+   <section type="defaulttitlepage" name="&lt;Default Title Page&gt;" url="" flags="0" topicid="-1"/>
+   <section type="toc" name="TOC" url="" flags="0" topicid="-1"/>
+   <section type="topics" name="Chapter Layout" url="" flags="0" topicid="-1"/>
+   <section type="glossary" name="Glossary" url="" flags="0" topicid="-1"/>
+   <section type="index" name="Index" url="" flags="0" topicid="-1"/>
+ </sectionlist>
+  <robopdfgeneratorsettings data="resIndex=3&amp;jpegImageQuality=75&amp;imageDPI=96&amp;quiet=0&amp;Quality=3&amp;resolution=96&amp;customResolution=300&amp;customImageDPI=96&amp;customJpegImageQuality=75&amp;pdfTemplateEnable=0&amp;pdfTemplateOnTop=0&amp;pdfTemplate=&amp;watermark=&amp;watermarkText=&amp;watermarkFontName=Arial&amp;watermarkFontSize=48&amp;watermarkStyle=0&amp;watermarkColor=90&amp;sd_permissionFlags=-64&amp;sd_enabled=0&amp;sd_keyLen=16&amp;sd_up=&amp;sd_op=&amp;"/>
+</printdoclayout>

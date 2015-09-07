@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="userMain" extends="DefaultTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/userMain.jsp" />
+	</definition>
+ 
+	<definition name="changePassword" extends="DefaultTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/changePassword.jsp" />
+	</definition>
+	
+	<definition name="uploadFilePage" extends="DefaultTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/uploadFilePage.jsp" />
+	</definition>
+	
+	<definition name="filesLog" extends="DefaultTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/pages/filesLog.jsp" />
+	</definition>
+	 
+</tiles-definitions>

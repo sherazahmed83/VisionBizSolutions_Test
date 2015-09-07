@@ -1,0 +1,82 @@
+﻿[Target:Microsoft HTML Help]
+SSLayoutType=1
+ActionID For Generation=1001
+ResultFileName=!SSL!\Microsoft_HTML_Help\rh8_twisty2.chm
+Remove Folder with prompt=1
+CreateProjectTime=17:58, June 15, 2010
+CreateProjectUser=Peter
+SupportMas_MPJ=1
+ViewFileName=!SSL!\Microsoft_HTML_Help\rh8_twisty2.chm
+ResultStatus=0
+BuildTimeHi=30084268
+BuildTimeLow=27012584
+[Target:WebHelp]
+SSLayoutType=2
+ActionID For Generation=1001
+ResultFileName=!SSL!\WebHelp\index.htm
+Remove Folder with prompt=1
+CreateProjectTime=18:53, May 21, 2013
+CreateProjectUser=Peter
+SupportMas_MPJ=1
+ViewFileName=!SSL!\WebHelp\index.htm
+ResultStatus=0
+BuildTimeHi=30299724
+BuildTimeLow=551880918
+[PreSingleSource]
+Html Help Project=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.hhp
+Table Of Content=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty.hhc
+Index=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty.hhk
+Topic Index=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\RHTopicKeyword$.hhk
+See Also Index=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.hha
+Browse Sequence=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.brs
+Glossary=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty.glo
+Topic Properties=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trs
+Active Folders=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trf
+Baggage Files=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trb
+Skin List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trk
+Active Layout Names=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trl
+Template Files=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trt
+Project TOC List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trtocl
+Project Index List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.tridxl
+Project Glossary List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trglol
+Project CSS List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trcss
+Project Variable Set List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.trvset
+Default Topic=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\twisties_show_hide.htm
+Build Tags0=28540;Online | Print
+Build Tags=
+Build Expression=
+Language ID=2057
+Language Name=en_UK
+Language=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\RoboHHRE.lng
+Stop List=Z:\00_Authoring_Stuff\Twisty2b_rework\rh8_twisty2\rh8_twisty2.stp
+[Target:Printed Documentation]
+SSLayoutType=7
+[Target:XML Output]
+SSLayoutType=8192
+[Target:Print]
+SSLayoutType=7
+ActionID For Generation=1001
+ResultFileName=!SSL!\Print\Twisty2a.doc
+Remove Folder with prompt=1
+CreateProjectTime=17:59, June 15, 2010
+CreateProjectUser=Peter
+SupportMas_MPJ=1
+ViewFileName=!SSL!\Print\Twisty2a.doc
+ResultStatus=0
+BuildTimeHi=30084268
+BuildTimeLow=500582584
+[Target:Adobe AIR]
+SSLayoutType=512
+ActionID For Generation=1001
+ResultFileName=!SSL!\Adobe_AIR\AdobeAIRApplication\rh8_twisty2.air
+Remove Folder with prompt=1
+CreateProjectTime=
+CreateProjectUser=
+SupportMas_MPJ=1
+ViewFileName=!SSL!\Adobe_AIR\AdobeAIRApplication\rh8_twisty2.air
+ResultStatus=0
+LivePreviewStatus=0
+BuildTimeHi=30174985
+BuildTimeLow=11999307
+LivePreviewBuildTimeHi=30174985
+LivePreviewBuildTimeLow=11999307

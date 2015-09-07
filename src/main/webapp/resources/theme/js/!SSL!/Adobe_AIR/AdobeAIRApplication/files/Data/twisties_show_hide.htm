@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <meta name="generator" content="Adobe RoboHelp 8" />
+<title>Twisties and Show/Hide</title>
+<link rel="StyleSheet" href="grainge.css" type="text/css" />
+<script type="text/javascript" language="JavaScript" src="./twisty2a.js"></script>
+<script type="text/javascript" language="JavaScript">
+//<![CDATA[
+function reDo() {
+  if (innerWidth != origWidth || innerHeight != origHeight)
+     location.reload();
+}
+if ((parseInt(navigator.appVersion) == 4) && (navigator.appName == "Netscape")) {
+	origWidth = innerWidth;
+	origHeight = innerHeight;
+	onresize = reDo;
+}
+onerror = null; 
+//]]>
+</script>
+<style type="text/css">
+<!--
+div.WebHelpPopupMenu { position:absolute;
+left:0px;
+top:0px;
+z-index:4;
+visibility:hidden; }
+-->
+</style>
+
+			<script type="text/javascript" language="javascript1.2" src="whver.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whutils.js"></script>
+			<script type="text/javascript" language="javascript1.2" src="whtopic.js"></script>
+    			<script type="text/javascript" language="javascript1.2" src="whlang.js"></script> 
+    </head>
+
+<body><script type="text/javascript" language="javascript1.2">
+	      //<!--
+	      RH_Document_Write("<p style=\"text-align:right\"> ");
+RH_AddMasterBreadcrumbs( "rh8_twisty2.htm", "", "/", "Home", "twisties_show_hide.htm");
+RH_Document_Write("Twisties and Show/Hide<\/p>");
+//-->
+</script>
+<script src="./ehlpdhtm.js" type="text/javascript" language="JavaScript1.2"></script>
+<h1>Twisties and Show Hide</h1>
+<p>This project shows Willam Van Weelden's script that allows Twisties 
+ and Show/Hide buttons to work from one script. </p>
+<p>The script also allows more than one twisty image to be used in the 
+ same topic, this can be useful for dropdowns that cover different types 
+ of information. Not all dropdowns need to have an image applied, just 
+ those where you want to use twisties.</p>
+<p class="EmphasisTeal">This is the recommended method unless your project 
+ is already using an earlier method and you prefer to continue using that.</p>
+<h2>Compatibility</h2>
+<table class="std" cellspacing="0" width="100%">
+	<col style="width: 20%;" />
+	<col style="width: 20%;" />
+	<col style="width: 20%;" />
+	<col style="width: 20%;" />
+	<col style="width: 20%;" />
+	<tr class="t1Row">
+		<td><p style="font-family: Verdana, sans-serif;">&#160;</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">IE</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">FF</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">CHMs</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">AIR</p></td>
+	</tr>
+	<tr class="t2Row">
+		<td><p style="font-family: Verdana, sans-serif;">RH8 and RH9</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+	</tr>
+	<tr class="t1Row">
+		<td><p style="font-family: Verdana, sans-serif;">RH7 or earlier</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">YES</p></td>
+		<td><p style="font-family: Verdana, sans-serif;" align="center">NOT 
+		 TESTED</p></td>
+	</tr>
+</table>
+<p>&#160;</p>
+<p class="EmphasisTeal">UPDATE 9th September 2011 - Previously it was stated 
+ that the method was not compatible with AIR Help. That was incorrect. 
+ It will not work if you preview after compiling but it will work if you 
+ install the AIR file. Also the chart has been amended to reflect the methods 
+ also work in RoboHelp 9.</p>
+<h2>Demo</h2>
+<p><img src="images1/btnshowall.gif" onclick="ShowAll(this)" alt="btnshowall.gif" id="showall" style="border: none;" width="73" height="21" border="0" /></p>
+<p><a class="dropspot" href="javascript:TextPopup(this)" id="a1" onclick="JavaScript:swapImages(this, dropdown1)" 
+		 onfocus="this.blur()"><img src="images1/arrowright.gif" name="dropdown1" alt="arrowright.gif" id="dropdown1" style="border: none;" width="10" height="9" border="0" /> 
+ Dropdown hotspot 1</a></p>
+<div class="droptext" id="POPUP175608041" style="display: none;">
+	<p>Type your drop-down text here.</p>
+</div>
+<p><a class="dropspot" href="javascript:TextPopup(this)" id="a2" onclick="JavaScript:swapImages(this, dropdown2)" 
+		 onfocus="this.blur()"><img src="images1/arrowright.gif" name="dropdown2" alt="arrowright.gif" style="border: none;" width="10" height="9" border="0" /> Dropdown 
+ hotspot 2</a></p>
+<div class="droptext" id="POPUP120673893" style="display: none;">
+	<p>Type your drop-down text here.</p>
+</div>
+<p><a class="dropspot" href="javascript:TextPopup(this)" id="a3" onclick="JavaScript:swapImages(this, dropdown3)" 
+		 onfocus="this.blur()"><img src="images2/arrowright.gif" name="dropdown3" alt="arrowright.gif" style="border: none;" width="26" height="19" border="0" /> Dropdown 
+ hotspot 3</a></p>
+<div class="droptext" id="POPUP364509424" style="display: none;">
+	<p>Type your drop-down text here.</p>
+</div>
+<p><a class="dropspot" href="javascript:TextPopup(this)" id="a4">Dropdown 
+ hotspot 4</a></p>
+<div class="droptext" id="POPUP178954588" style="display: none;">
+	<p>Type your drop-down text here.</p>
+</div>
+<p><a class="expandspot" href="javascript:TextPopup(this)" id="a5">Expanding 
+ hotspot</a><span class="expandtext" id="POPUP364553894" style="display: none;">Type 
+ your expanding text here. </span></p>
+<h2>Setting up the twisty2a.js file</h2>
+<p>The javascript file allows you to configure some variables.</p>
+<p class="EmphasisTeal">Note that var RH8orup was added in twisty2a.js</p>
+<table class="std" cellspacing="0" width="100%">
+	<col style="width: 27.277%;" />
+	<col style="width: 72.723%;" />
+	<tr class="t1Row">
+		<td><p>var TwistyHidden = &quot;arrowright.gif&quot;;</p></td>
+		<td><p>You can use any image name and file type but you must set 
+		 that here. Do not enter the path to the image, just its name and 
+		 file type.</p>
+		<p>You can use more than one image for the hotspots in your topics 
+		 but they must all have the same name and file type. It follows 
+		 that if you are using more than one image with the same name and 
+		 file type, they will need to be saved in different folders. There 
+		 is more information about this in the twisty instructions.</p></td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>var TwistyShow = &quot;arrowdown.gif&quot;;</p></td>
+		<td><p>The image the user will see after they click the TwistyHidden 
+		 image. Only the filename is needed.</p></td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>var OneButtonMethod = true; </p></td>
+		<td><p>Set to true if you want to use the one button method. Also 
+		 set the image name and file type for the ShowAllButton and HideAllButton.</p>
+		<p>Set to false if you want to use the two button method. Leave 
+		 the default image name and file type.</p></td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>var ShowAllButton = &quot;btnshowall.gif&quot;;</p></td>
+		<td><p>The image you use for the show all button.</p></td>
+	</tr>
+	<tr class="t1Row">
+		<td><p>var HideAllButton = &quot;btnhideall.gif&quot;;</p></td>
+		<td><p>The image you use for the hide all button.</p></td>
+	</tr>
+	<tr class="t2Row">
+		<td><p>var RH8orup = true;</p></td>
+		<td><p>Set to true (the default) if you are using RoboHelp 8, set 
+		 to false for earlier versions.</p></td>
+	</tr>
+</table>
+<h2>Referencing the script</h2>
+<ol type="1">
+	<li><p>Add this line to the head section of your topic<br />
+	&lt;script type=&quot;text/javascript&quot; language=&quot;JavaScript&quot; 
+	 src=&quot;twisty2a.js&quot;&gt;&lt;/script&gt;</p></li>
+	<li><p>If the topic is not in the root of your project, you will need 
+	 to create the relative path.</p></li>
+	<li><p>Copy the twisty2a.js file from this demo project to the root 
+	 of your project.</p></li>
+	<li><p>Add the file to baggage files.</p></li>
+</ol>
+<p class="EmphasisTeal" style="margin-left: 0px;">Tip: If the reference 
+ to the CSS file is say ..\my.css, then you need to add ..\ to the twisty 
+ script path.</p>
+<h2>Setting up the twisties</h2>
+<p>If you want to use both twisties and show/hide, then set up the twisties 
+ first so that they can be seen working when you set up show/hide.</p>
+<p>If you only want show/hide, skip this section.</p>
+<ol type="1">
+	<li><p>Add the image in the normal way and browse to the folder containing 
+	 the image to be displayed when the topic is opened and the dropdown 
+	 is in its default state of being collapsed. In this demo project that 
+	 is named arrowright.gif. That folder must also contain the paired 
+	 image that will be displayed when the hotspot is clicked and the dropdown 
+	 contents are displayed.<br />
+	You can use a different image for another dropdown (in the same topic 
+	 or another topic) by browsing to a different folder. That folder must 
+	 contain the alternative paired image.<br />
+	Whatever the location of the twisty images, they all must have the 
+	 name and file type you have defined in the twisty2a.js file. You cannot 
+	 use different names or file types for the twisty images.</p></li>
+	<li><p>Enter the text for the hotspot.</p></li>
+	<li><p>Select the image and the hotspot and then create the dropdown 
+	 in the normal way.</p></li>
+	<li><p>Preview the topic. At this point the hotspot will make the dropdown 
+	 work but the image will not change. This step is just to test the 
+	 dropdown is working.</p></li>
+	<li><p>Select the image and the hotspot and change to HTML (code) view.</p></li>
+	<li><p>Deselect the text. (The text was selected in step 5 to help 
+	 you locate the code you need to amend.)</p></li>
+	<li><p>Add the text that I have highlighted in blue below. Each dropdown 
+	 will have an ID applied by RoboHelp. The text you add also needs a 
+	 unique number so I suggest you use the same number as the ID, 1 in 
+	 this example.</p></li>
+</ol>
+<p style="margin-left: 40px;">&lt;p&gt;&lt;a class=&quot;dropspot&quot; 
+ href=&quot;javascript:TextPopup(this)&quot; id=&quot;a1&quot; <span style="color: #0000ff; 
+	 font-weight: bold;"><font color="blue" ><b>onclick=&quot;JavaScript:swapImages(this, dropdown1)&quot;</b></font></span> 
+ </p>
+<p style="margin-left: 40px;">&#160;<span style="color: #0000ff; font-weight: bold;"><font color="blue" ><b>onfocus=&quot;this.blur()&quot;</b></font></span>&gt;&lt;img 
+ src=&quot;./images1/arrowright.gif&quot; <span style="color: #0000ff; 
+												 font-weight: bold;"><font color="blue" ><b>name=&quot;dropdown1&quot;</b></font></span> 
+ </p>
+<p style="margin-left: 40px;">&#160;alt=&quot;&quot; id=&quot;dropdown1&quot; 
+ style=&quot;border: none;&quot; </p>
+<p style="margin-left: 40px;">&#160;width=&quot;24&quot; height=&quot;19&quot; 
+ border=&quot;0&quot; /&gt; </p>
+<p style="margin-left: 40px;">&#160;Dropdown hotspot 1&lt;/a&gt;&lt;/p&gt;</p>
+<ol start="8" type="1">
+	<li><p>Add the TwistyShow image to baggage files (arrowdown.gif in 
+	 this demo project).</p></li>
+	<li><p>Generate / compile the help and test the twisty works.</p></li>
+	<li><p>Repeat for each twisty required.</p></li>
+</ol>
+<h3>Form Fields</h3>
+<p>If your topic has any form fields in it, the twisty cannot work within 
+ a form. When you add any type of form field, RH adds a &lt;form&gt; tag 
+ just after the opening body tag.</p>
+<p>You need to delete that tag and precede each form field with &lt;form&gt;. 
+ Place a closing &lt;/form&gt; tag after the form code.</p>
+<p>If you have lots of form fields and lots of twisties, there's a trick.</p>
+<p>Contrary to the instructions above, do not delete the &lt;form&gt; tag 
+ that RH adds.</p>
+<h2>Setting up show/hide </h2>
+<h3>One button method</h3>
+<ol type="1">
+	<li><p>Add the Show All image in the normal way browsing to the folder 
+	 containing the Show All image. The paired Hide All image must be in 
+	 the same folder.<br />
+	The image name and file type can be whatever you want but must be whatever 
+	 you have defined in the twisty2a.js file.<br />
+	You can use a different pair of images for another topic by browsing 
+	 to a different folder. That folder must contain the alternative paired 
+	 image.<br />
+	Whatever the location of the show/hide images, they all must have the 
+	 name and file type you have defined in the twisty2a.js file. You cannot 
+	 use different names or file types for the show/hide images.</p></li>
+	<li><p>The code for the Show All image will look like this<br />
+	&lt;p&gt;&lt;img src=&quot;images1/btnshowall.gif&quot; alt=&quot;&quot; 
+	 style=&quot;border: none;&quot; width=&quot;73&quot; <br />
+	height=&quot;21&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;<br />
+	Amend it by adding the text highlighted blue<br />
+	&lt;p&gt;&lt;img src=&quot;./images1/btnshowall.gif&quot; <span style="font-weight: bold; 
+	 color: #0000ff;"><font color="blue" ><b>name=&quot;ShowAll(this)&quot;</b></font></span> <br />
+	alt=&quot;&quot; style=&quot;border: none;&quot; width=&quot;73&quot; 
+	 height=&quot;21&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;</p></li>
+	<li><p>Add the HideAllButton image to baggage files (btnhideall.gif 
+	 in this demo project).</p></li>
+	<li><p>Add dropdowns if not already in the project.</p></li>
+	<li><p>Generate / compile and test.</p></li>
+</ol>
+<h3>Two buttons method</h3>
+<ol type="1">
+	<li><p>Add the Show All image in the normal way browsing to the folder 
+	 containing the Show All image. The image name and file type must be 
+	 as defined in the twisty2a.js file.</p></li>
+	<li><p>Add the Hide All image in the normal way browsing to the folder 
+	 containing the Hide All image. The image name and file type must be 
+	 as defined in the twisty2a.js file.</p></li>
+	<li><p>If you want different topics to have different pairs of buttons, 
+	 create them in different folders but ensure the same names and file 
+	 types are used.</p></li>
+	<li><p>The code for the Show All image will look like this<br />
+	&lt;p&gt;&lt;img src=&quot;images1/btnshowall.gif&quot; alt=&quot;&quot; 
+	 style=&quot;border: none;&quot; width=&quot;73&quot; <br />
+	height=&quot;21&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;<br />
+	Amend it by adding the text highlighted blue<br />
+	&lt;p&gt;&lt;img src=&quot;./images1/btnshowall.gif&quot; <span style="font-weight: bold; 
+	 color: #0000ff;"><font color="blue" ><b>name=&quot;ShowAll(this)&quot;</b></font></span> <br />
+	alt=&quot;&quot; style=&quot;border: none;&quot; width=&quot;73&quot; 
+	 height=&quot;21&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;</p></li>
+	<li><p>The code for the Hie All image will look like this<br />
+	&lt;p&gt;&lt;img src=&quot;images1/btnhideall.gif&quot; alt=&quot;&quot; 
+	 style=&quot;border: none;&quot; width=&quot;73&quot; <br />
+	height=&quot;21&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;<br />
+	Amend it by adding the text highlighted blue<br />
+	&lt;p&gt;&lt;img src=&quot;./images1/btnhideall.gif&quot; <span style="font-weight: bold; 
+	 color: #0000ff;"><font color="blue" ><b>name=&quot;HideAll(this)&quot;</b></font></span> <br />
+	alt=&quot;&quot; style=&quot;border: none;&quot; width=&quot;73&quot; 
+	 height=&quot;21&quot; border=&quot;0&quot; /&gt;&lt;/p&gt;</p></li>
+	<li><p>Add the HideAllButton image to baggage files (btnhideall.gif 
+	 in this demo project).</p></li>
+	<li><p>Add dropdowns if not already in the project.</p></li>
+	<li><p>Generate / compile and test.</p></li>
+</ol>
+<h3>Using both methods in one project</h3>
+<p>If you need to use both methods in different topics in the same project, 
+ create a copy of twisty2a.js and name it twisty2twobutton.js.</p>
+<ul type="disc">
+	<li><p>Set the OneButtonMethod variable to true in twisty2a.js</p></li>
+	<li><p>Set the OneButtonMethod variable to false in twisty2twobutton.js</p></li>
+</ul>
+<p>Reference the required file in each topic.</p>
+
+
+<script type="text/javascript" language="JavaScript1.2">//<![CDATA[
+	if( typeof( TextPopupInit ) != 'function' ) TextPopupInit = new Function();
+	TextPopupInit('a1','POPUP175608041');
+	TextPopupInit('a2','POPUP120673893');
+	TextPopupInit('a3','POPUP364509424');
+	TextPopupInit('a4','POPUP178954588');
+	TextPopupInit('a5','POPUP364553894');
+//]]></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<html lang="en"><!-- saved from url=(0014)about:internet -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TOC</title>
+<script type="text/javascript" language="JavaScript">
+var RH_BreadCrumbDataStringVariable="";
+
+function getParameterValue( name )
+{
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( this.window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+}
+
+function SetCurrentLevel(newLevel)
+{
+    var fn = "this.parent.document.getElementById('flash').SetCurrentTOCLevel('"+newLevel+"');";
+	setTimeout(fn,1);
+}
+
+function OnLoadTOCFn()
+{
+	//this is where we will try to find the parameters of the url
+	var currentLevel = getParameterValue('currentlevel');
+	//we need to tell flash the current level
+	SetCurrentLevel(currentLevel);
+}
+
+function updateHTMLBodyContents(newVal)
+{
+	this.document.body.innerHTML = newVal;
+}
+
+</script>
+</head>
+<body onLoad="javascript:OnLoadTOCFn();" bgcolor="#FFFFFF">
+</body>
+</html>

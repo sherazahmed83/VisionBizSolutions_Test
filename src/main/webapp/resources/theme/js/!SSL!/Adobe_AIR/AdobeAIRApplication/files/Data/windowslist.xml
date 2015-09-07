@@ -1,0 +1,5 @@
+﻿<windows-list>
+		<window sWName="NewWindow" bBUseDefault="true" nWBOptions="0" sWBLeft="" sWBTop="" sWBWidth="" sWBHeight="" sWCaption="NewWindow" nWPanes="2" nWPOptions="2" sWPButtons="toc|ndx|nls|gls" sWPDefBtn="toc" />
+	
+</windows-list>
+

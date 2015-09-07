@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+   <section name="Target:Adobe AIR">
+      <element name="SSBreadCrumbHomePage" value="Home" />
+      <element name="SSBreadCrumbLayout" value="0" />
+      <element name="m_strTopicBarIniOrder" value="TpcShow|TpcInfoSyncToc|" />
+      <element name="m_bNavPaneFts" value="1" />
+      <element name="PublishingURLColumn" value="200" />
+      <element name="SSTemplateOption" value="0" />
+      <element name="m_strCompanyLogoPath" value="" />
+      <element name="m_strFtsHighlightColor" value="enable,#b2b4bf,black" />
+      <element name="m_strToolBarIniOrder" value="Contents|Index|FtsSearch|Glossary|WebSearch|Custom1|Custom2|Custom3|FtsInputField|" />
+      <element name="m_strTopicBarSelOrder" value="TpcShow|TpcInfoSyncToc|" />
+      <element name="m_nNavPaneMode" value="1" />
+      <element name="InstallationFolder" value="AIR_Tests" />
+      <element name="m_strDigitalSignPath" value="Z:\AIR_Stuff\Certificate\default.p12" />
+      <element name="m_strUpdateXmlLocationLinux" value="" />
+      <element name="m_strToolBarSelOrder" value="Contents|Index|FtsSearch|Glossary|WebSearch|Custom1|Custom2|Custom3|FtsInputField|" />
+      <element name="m_strIcon128Path" value="" />
+      <element name="m_bResources" value="1" />
+      <element name="m_strId" value="75|0|0|0|23|0|18|0|27|0|11|0|3|0|19|0|0|0|" />
+      <element name="m_strMinToolBarIniOrder" value="MinBrowsePrev|MinBrowseNext|MinSyncToc|MinHide|" />
+      <element name="m_bNavPaneToc" value="1" />
+      <element name="m_strNpiIndexOn" value="bssctab3.gif" />
+      <element name="m_strNpiGlossaryOff" value="bssctab8.gif" />
+      <element name="SSTableOfContent" value="" />
+      <element name="m_strCompanyDescriptiveText" value="Powered by Adobe RoboHelp" />
+      <element name="m_strUpdateXmlLocationMac" value="" />
+      <element name="m_strMinToolBarSelOrder" value="MinBrowsePrev|MinBrowseNext|" />
+      <element name="SSDefaultTopic" value="twisties_show_hide.htm" />
+      <element name="m_strDescription" value="" />
+      <element name="m_strIcon48Path" value="" />
+      <element name="Links" value="" />
+      <element name="SSBreadCrumbFontStructure" value="0;2;0;Arial;-13;0;0;3;0;1;0;0;400;0;9216;100;0;0;255" />
+      <element name="m_bAddSearchContext" value="1" />
+      <element name="m_strNptIndex" value="Index" />
+      <element name="m_strNptSearch" value="Search" />
+      <element name="PublishingOptions" value="0" />
+      <element name="SSTemplate" value="" />
+      <element name="m_strAppID" value="01" />
+      <element name="m_strIcon16Path" value="" />
+      <element name="SSLayoutType" value="512" />
+      <element name="SSIndex" value="" />
+      <element name="m_bAutoUpdate" value="0" />
+      <element name="SSBreadCrumbLabel" value="" />
+      <element name="m_strNpiSearchOn" value="bssctab5.gif" />
+      <element name="m_strThemeName" value="Midnight Black" />
+      <element name="m_bSyncWithOnlineURL" value="0" />
+      <element name="m_bNavPaneGls" value="0" />
+      <element name="m_bAutoMngFlashCfg" value="1" />
+      <element name="SSVariableSet" value="" />
+      <element name="m_strVersion" value="02" />
+      <element name="m_bCommenting" value="1" />
+      <element name="m_bTimestamp" value="0" />
+      <element name="m_strNpiGlossaryOn" value="bssctab7.gif" />
+      <element name="ProgramMenuFolder" value="AIR_Tests" />
+      <element name="m_strWindowHeight" value="600" />
+      <element name="m_strHelpSyncOnlineLocation" value="" />
+      <element name="SSBreadCrumbSeperator" value="&gt;" />
+      <element name="SSBreadCrumbUseTopicFormat" value="1" />
+      <element name="m_strNptGlossary" value="Glossary" />
+      <element name="m_strNpiContentOn" value="bssctab1.gif" />
+      <element name="m_strNpiSearchOff" value="bssctab6.gif" />
+      <element name="Publish_Servers" value="" />
+      <element name="m_strCommentSyncLocationMac" value="" />
+      <element name="m_strUpdateXmlLocation" value="http://" />
+      <element name="SSBreadCrumbBgColor" value="" />
+      <element name="m_bNavPaneNdx" value="1" />
+      <element name="m_strNpiContentOff" value="bssctab2.gif" />
+      <element name="DestinationProjectName" value="!SSL!\Adobe_AIR\AdobeAIRApplication\rh8_twisty2.air" />
+      <element name="BuildExpression" value="" />
+      <element name="m_strCommentSyncLocationLinux" value="" />
+      <element name="ActiveSkinPathName" value="!SkinSubFolder!\BeautifulVista\BeautifulVista.skn" />
+      <element name="SSBreadCrumbAlignment" value="2" />
+      <element name="m_bNeedSubstrSearch" value="0" />
+      <element name="m_strNpiIndexOff" value="bssctab4.gif" />
+      <element name="PublishingServerColumn" value="80" />
+      <element name="SSDefaultWindow" value="" />
+      <element name="m_bRememberPassword" value="1" />
+      <element name="SSGlossary" value="" />
+      <element name="m_strCopyright" value="" />
+      <element name="m_strSkinName" value="Multi Tab Accordion" />
+      <element name="m_strCommentSyncLocationWindows" value="" />
+      <element name="m_eAIRSSLOutputType" value="1" />
+      <element name="m_nAutoUpdateLinkType" value="2" />
+      <element name="RSSFeeds" value="" />
+      <element name="ActiveSkinName" value="BeautifulVista" />
+      <element name="m_bAddBreadcrumbs" value="1" />
+      <element name="m_strNptContent" value="Contents" />
+      <element name="m_strUpdateXmlLocationWindows" value="" />
+      <element name="m_strToolBarDefaultTab" value="Contents|" />
+      <element name="SSCSS" value="" />
+      <element name="m_strTitle" value="Twisties" />
+      <element name="m_strIcon32Path" value="" />
+      <element name="m_strWindowWidth" value="800" />
+   </section>
+</configuration>

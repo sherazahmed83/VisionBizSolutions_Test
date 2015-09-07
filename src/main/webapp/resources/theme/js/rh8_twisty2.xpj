@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhpml majorversion="3" minorversion="0">
+	<projectproperties>
+		<projecttitle>rh8_twisty2</projecttitle>
+		<homepage>twisties_only_original.htm</homepage>
+		<primarylayout>WebHelp</primarylayout>
+		<Flags>92</Flags>
+		<language>2057</language>
+	</projectproperties>
+	<TOCFileNames>
+		<TOC>
+			<file>rh8_twisty.hhc</file>
+			<default>default</default>
+		</TOC>
+	</TOCFileNames>
+	<IndexFileNames>
+		<Index>
+			<file>rh8_twisty.hhk</file>
+			<default>default</default>
+		</Index>
+	</IndexFileNames>
+	<GlossaryFileNames>
+		<Glossary>
+			<file>rh8_twisty.glo</file>
+			<default>default</default>
+		</Glossary>
+	</GlossaryFileNames>
+	<ignoredwords/>
+	<TODOList>
+		<TODOItem>First Draft</TODOItem>
+		<TODOItem>Added To TOC</TODOItem>
+		<TODOItem>Links</TODOItem>
+		<TODOItem>Ran Smart Index</TODOItem>
+		<TODOItem>Index keywords</TODOItem>
+		<TODOItem>See Also keywords</TODOItem>
+		<TODOItem>Images</TODOItem>
+		<TODOItem>Browse Sequences</TODOItem>
+		<TODOItem>Tested</TODOItem>
+		<TODOItem>Finalized</TODOItem>
+		<TODOItem>Reviewed</TODOItem>
+	</TODOList>
+	<miscproperties/>
+	<CompileOptions>
+		<Flags>12</Flags>
+	</CompileOptions>
+	<Collections>
+		<FolderCollectionFilename>root.fpj</FolderCollectionFilename>
+		<SkinCollectionFilename>rhskins.apj</SkinCollectionFilename>
+		<BaggageCollectionFilename>rhbag.apj</BaggageCollectionFilename>
+		<WindowCollectionFilename>rhwnd.apj</WindowCollectionFilename>
+		<TemplateCollectionFilename>rhtemplate.apj</TemplateCollectionFilename>
+		<BuildTagCollectionFilename>rhbuildtag.apj</BuildTagCollectionFilename>
+		<MapFileCollectionFilename>rhmapfile.apj</MapFileCollectionFilename>
+		<ColorCollectionFilename>rhcolor.apj</ColorCollectionFilename>
+		<FontSetCollectionFilename>rhfontset.apj</FontSetCollectionFilename>
+		<ExternalFileCollectionFilename>rhextern.apj</ExternalFileCollectionFilename>
+		<LayoutCollectionFilename>rhlayout.apj</LayoutCollectionFilename>
+		<AKeywordCollectionFilename>rhakeyword.apj</AKeywordCollectionFilename>
+		<KKeywordCollectionFilename>rhkkeyword.apj</KKeywordCollectionFilename>
+		<PopupTopicCollectionFilename>rhpopup.apj</PopupTopicCollectionFilename>
+		<FramesetCollectionFilename>rhframeset.apj</FramesetCollectionFilename>
+		<MergedHelpCollectionFilename>rhmhelp.apj</MergedHelpCollectionFilename>
+		<InfoTypeCollectionFilename>rhinfotype.apj</InfoTypeCollectionFilename>
+		<VariableCollectionFilename>rhvariable.apj</VariableCollectionFilename>
+		<SnippetCollectionFilename>rhsnippet.apj</SnippetCollectionFilename>
+		<RHFrameDocsCollectionFileName>RHFrameDocs.apj</RHFrameDocsCollectionFileName>
+		<RHWordDocsCollectionFileName>RHWordDocs.apj</RHWordDocsCollectionFileName>
+	</Collections>
+	<mergedhelpfiles/>
+</rhpml>

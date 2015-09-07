@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<section name="MasterPage">
+		<element name="MT_ShowString" value="Show"></element>
+		<element name="MT_HideString" value="Hide"></element>
+	</section>
+	<section name="GlossaryTab">
+		<element name="TabCaption" value="&amp;Glossary"></element>
+		<element name="TermCaption" value="&amp;Term"></element>
+		<element name="DefinitionCaption" value="&amp;Definition For:"></element>
+	</section>
+	<section name="BrowseSequence">
+		<element name="PreCaption" value="Previous"></element>
+		<element name="PreTooltip" value="Previous Topic"></element>
+		<element name="NextCaption" value="Next"></element>
+		<element name="NextTooltip" value="Next Topic"></element>
+		<element name="BlockTooltip" value="Select Block"></element>
+	</section>
+	<section name="Common">
+		<element name="Contents" value="Contents"></element>
+		<element name="Index" value="Index"></element>
+		<element name="Search" value="Search"></element>
+		<element name="Glossary" value="Glossary"></element>
+		<element name="Logo/Author" value="Powered By"></element>
+		<element name="Show" value="Show"></element>
+		<element name="Hide" value="Hide"></element>
+		<element name="SyncToc" value="SyncToc"></element>
+		<element name="Prev" value="&lt;&lt;"></element>
+		<element name="Next" value="&gt;&gt;"></element>
+		<element name="Disabled Prev" value="&lt;&lt;"></element>
+		<element name="Disabled Next" value="&gt;&gt;"></element>
+		<element name="Seperate" value="|"></element>
+	</section>
+	<section name="AdobeAIR">
+		  <element name="OpenInNewTab" value="Open in new tab" />
+		  <element name="LoadingNewTabMsg" value="Loading..." />
+		  <element name="PrintAlertTitle" value="Print" />
+		  <element name="SearchResultDefaultBookmark" value="Search Results for " />
+		  <element name="GlossaryDefinitionBoxTitle" value="Glossary Definition" />
+		  <element name="FavoriteDeleteButtonTitle" value="Delete" />
+		  <element name="NewSearchTabTitle" value="Search Results" />
+		  <element name="FavoriteAlredyExists" value="already exists in Favorites" />
+		  <element name="ErrorShowingHelpFile" value="Error in accessing help file" />
+		  <element name="PrintEntireHelpConfirmation" value="Do you want to print all the topics?" />
+		  <element name="newFolderName" value="New Folder" />
+		  <element name="ServerConnectionError" value="No connection available to server, switching to offline mode" />
+		  <element name="Favorites" value="Favorites" />
+		  <element name="PrintThisCategory" value="Print this Category" />
+		  <element name="PrintThisPage" value="Print this Page" />
+		  <element name="BrowseSequenceBoxTitle" value="How Do I" />
+		  <element name="IndexSearchText" value="Type in keywords to search" />
+		  <element name="SearchTextInputToolTip" value="Enter text to search" />
+		  <element name="SearchButtonToolTip" value="Press Ctrl+Enter to open search results in new tab" />
+		  <element name="PrintMenuOptionsToolTip" value="Print Menu" />
+		  <element name="FavoritesTopMenuToolTip" value="Add or View Favorites" />
+		  <element name="CommentPodToggleToolTip" value="Toggle Comments pod" />
+		  <element name="ShowHideButtonToolTip" value="Show/Hide" />
+		  <element name="AddToFavoriteMenuItem" value="Add to Links" />
+		  <element name="ViewFavoriteMenuItem" value="View Favorites" />
+		  <element name="PrintSequence" value="Print Sequence" />
+		  <element name="PrintEntireHelp" value="Print entire Help" />
+		  <element name="FavoriteMessageTitle" value="Favorites" />
+		  <element name="FavoriteLinksButtonTitle" value="Links" />
+		  <element name="FavoriteFeedsButtonTitle" value="RSS Feeds" />
+		  <element name="FavoriteDisplayTopic" value="Display" />
+		  <element name="FavoriteDeleteTopic" value="Delete" />
+		  <element name="FavoriteRenameTopic" value="Rename" />
+		  <element name="FavoriteAddFolder" value="Add Folder" />
+		  <element name="FavoriteAddRSSFeed" value="Add RSS Feed" />
+		  <element name="ViewerDialogOKButton" value="OK" />
+		  <element name="ViewerDialogCancelButton" value="Cancel" />
+		  <element name="ViewerDialogYesButton" value="Yes" />
+		  <element name="ViewerDialogNoButton" value="No" />
+		  <element name="AboutButtonTitle" value="About" />
+		  <element name="PreferenceButtonTitle" value="Preferences" />
+		  <element name="AboutBoxDialogTitle" value="About" />
+		  <element name="AboutBoxHelpID" value="Help ID:" />
+		  <element name="AboutBoxVersionID" value="Version ID:" />
+		  <element name="AboutBoxDescription" value="Description:" />
+		  <element name="PreferenceBoxDialogTitle" value="Preferences" />
+		  <element name="PreferenceDialogAllCommentsDeleted" value="All Comments are deleted" />
+		  <element name="PreferenceDialogCommentsDeleteMsg" value="Do you want to delete all the comments?" />
+		  <element name="PreferenceDialogContentTabTitle" value="General" />
+		  <element name="PreferenceDlgOpenInNewTab" value="Open Help topics in new tab" />
+		  <element name="PreferenceDlgShowBreadCrumb" value="Show Breadcrumbs" />
+		  <element name="PreferenceDlgShowBrowseSequence" value="Show Browse Sequence" />
+		  <element name="PreferenceDlgUseOfflineHelp" value="Use Offline Help" />
+		  <element name="PreferenceDlgAutoUpdateContent" value="Auto Update Content" />
+		  <element name="PreferenceDlgCheckForUpdate" value="Check for Updates" />
+		  <element name="PreferenceDlgCheckUpdateButton" value="Check Now" />
+		  <element name="PreferenceDialogCommentTabTitle" value="Comment" />
+		  <element name="PreferenceDlgUseLoginName" value="Always use Log-in name for Reviewer name" />
+		  <element name="PreferenceDialogUserNameError" value="Please specify valid reviewer name" />
+		  <element name="PreferenceDlgReviewerName" value="Reviewer Name" />
+		  <element name="PreferenceDlgDeleteAllComments" value="Delete all Comments" />
+		  <element name="PreferenceDlgDeleteCommentButton" value="Delete All" />
+		  <element name="CommentBoxConnectionError" value="Cannot access shared location for comments" />
+		  <element name="CommentBoxSyncMessage" value="Send/Receive for comments completed" />
+		  <element name="CommentBoxSendServerMessage" value="Comments sent to the shared location" />
+		  <element name="CommentBoxReceiveServerMessage" value="Comments received from the shared location" />
+		  <element name="CommentBoxCommentsAddEmptyError" value="Cannot add empty comments" />
+		  <element name="CommentBoxCommentTitle" value="Comments" />
+		  <element name="CommentBoxFileError" value="Error while accessing shared comment file" />
+		  <element name="CommentBoxSendToFileMenu" value="Send to File" />
+		  <element name="CommentBoxSendToServerMenu" value="Send to Server" />
+		  <element name="CommentBoxRecieveFromFileMenu" value="Receive from File" />
+		  <element name="CommentBoxRecieveFromServerMenu" value="Receive from Server" />
+		  <element name="CommentBoxShowReviewerMenu" value="Reviewer" />
+		  <element name="CommentBoxShowDateMenu" value="Date" />
+		  <element name="CommentBoxShowTopicMenu" value="Topic" />
+		  <element name="CommentBoxShowCommentReviewerMenu" value="Comments by Reviewer" />
+		  <element name="CommentBoxShowCommentForCurrentTopic" value="Comments for Topic" />
+		  <element name="CommentShowCurrentMenuItem" value="Current" />
+		  <element name="CommentShowAllMenuItem" value="All" />
+		  <element name="CommentBoxCommentFileMismatchError" value="Help ID does not match,  cannot import comments" />
+		  <element name="CommentBoxInvalidXML" value="Invalid XML file" />
+		  <element name="CommentBoxAddCommentButton" value="Add" />
+		  <element name="CommentBoxSaveXMLFileDlg" value="Save Comments XML File" />
+		  <element name="CommentBoxAddCommentButtonToolTip" value="Toggle comments box" />
+		  <element name="CommentBoxDeleteCommentButton" value="Delete" />
+		  <element name="CommentBoxDeleteCommentButtonToolTip" value="Delete selected Comment" />
+		  <element name="CommentBoxShowCommentButtonToolTip" value="Show Comments based on" />
+		  <element name="CommentBoxShowCommentButton" value="Show" />
+		  <element name="CommentBoxSortCommentButton" value="Sort" />
+		  <element name="CommentBoxSortCommentButtonToolTip" value="Sort Comments based on" />
+		  <element name="CommentBoxSendRcvCommentButton" value="Send and Receive" />
+		  <element name="CommentBoxSendRcvCommentButtonToolTip" value="Send and Receive Comments" />
+		  <element name="CommentBoxSaveCommentText" value="Add Comments:" />
+		  <element name="CommentBoxAddCommentHereText" value="Add Comments here" />
+		  <element name="CommentBoxSaveCommentTextToolTip" value="Write Comments you want to add" />
+		  <element name="CommentBoxSaveButtonToolTip" value="Click to add comments to database" />
+		  <element name="CommentBoxSaveButton" value="Save" />
+		  <element name="OpenURL" value="Open URL" />
+		  <element name="MarkAsRead" value="Mark as Read" />
+		  <element name="MarkAsUnread" value="Mark as Unread" />
+		  <element name="OpenInBrowser" value="Open in Browser" />
+		  <element name="NewRSSFeedDlgTitle" value="Add New RSS Feed" />
+		  <element name="NewRSSFeedName" value="RSS Feed Name:" />
+		  <element name="NewRSSFeedURL" value="RSS Feed URL:" />
+		  <element name="RSSSelectLabel" value="Select:" />
+		  <element name="RSSNoneLabel" value="None" />
+		  <element name="RSSReadLabel" value="Read" />
+		  <element name="RSSUnReadLabel" value="Unread" />
+		  <element name="RSSRefreshLabel" value="Refresh" />
+		  <element name="SearchResultError" value="No search results found" />
+		  <element name="FavoriteInvalidNameError" value="Invalid Name" />
+		  <element name="CommentImportFileDlgTitle" value="Select Comment XML File to Import" />
+		  <element name="MinimizeAppButton" value="Minimize" />
+		  <element name="MaximizeAppButton" value="Maximize" />
+		  <element name="CloseAppButton" value="Close" />
+		  <element name="PreferenceDlgHighLightSearch" value="Highlight search results" />
+		  <element name="NoUpdatePresent" value="No Update is available" />
+		  <element name="CheckingforUpdateMsg" value="Checking for Updates..." />
+		  <element name="UpdateMsgTitle" value="Auto Update" />
+		  <element name="NoUpdateLocationSpecified" value="Update location is not present" />
+		  <element name="ErrorInDownloadingUpdate" value="Error encountered while downloading" />
+		  <element name="ErrorInInstallingUpdate" value="Error encountered during installation" />
+		  <element name="DownloadingUpdate" value="Downloading Updates..." />
+		  <element name="InstallationStarted" value="Starting Installation..." />
+		  <element name="UpdateAvailable" value="An Update is available. Do you want to update now?" />
+		  <element name="UpdateAvailableWithVersion" value="An Update to version %s is available. Do you want to update now?" />
+		  <element name="ErrorWhileUpdating" value="Error occurred while updating" />
+		  <element name="NewUpdateAvailableMsg" value="New Update" />
+		  <element name="AddNewFavoriteMenu" value="Add Link" />
+		  <element name="EditOption" value="Edit" />
+		  <element name="EditRSSFeedDlgTitle" value="Edit RSS Feed" /> 
+		  <element name="NewBookmarkDlgTitle" value="Add New Link" />
+		  <element name="NewBookmarkName" value="Link Name" />
+		  <element name="NewBookmarkURL" value="Link URL" />
+		  <element name="EditBookmarkDlgTitle" value="Edit Link" />	
+		  <element name="PreferenceDialogBrowseButtonTitle" value="Browse" />
+		  <element name="PreferenceDlgChkCommentLocation" value="Use default location to sync comments" />
+		  <element name="PreferenceDlgCommentSyncLocation" value="Folder Location:" />
+		  <element name="GenericDeleteMsg" value="Do you want to delete selected item?" />
+	</section>
+	<section name="WebHelp">
+		<element name="Cancel" value="Cancel"></element>
+		<element name="CantOpenURLorFile" value="Can't open URL or file"></element>
+		<element name="CompletingContents" value="Completing Contents..."></element>
+		<element name="Display" value="Display"></element>
+		<element name="Term" value="Term:"></element>
+		<element name="Definition" value="Definition:"></element>
+		<element name="Done" value="Done"></element>
+		<element name="Find" value="Find"></element>
+		<element name="IndexInputPrompt" value="Type in the keyword to find:"></element>
+		<element name="RelateTopicListPrompt" value="Click a topic, then click Display."></element>
+		<element name="LoadingData" value="Loading data, please wait..."></element>
+		<element name="LoadingContents" value="Loading contents, please wait..."></element>
+		<element name="LoadingContentsData" value="Loading, click here to cancel..."></element>
+		<element name="LoadingFTS" value="Reading Search Data..."></element>
+		<element name="LoadingIndex" value="Loading Index..."></element>
+		<element name="LoadingTOCItem" value="Loading Table of Contents:"></element>
+		<element name="Searching" value="Searching..."></element>
+		<element name="FtsInputPrompt" value="Type in the word(s) to search for:"></element>
+		<element name="FtsHilitePrompt" value="Highlight search results"></element>
+		<element name="FtsMaxResult" value="Search results per page"></element>
+		<element name="TopicsFound" value="Topics Found"></element>
+		<element name="BrowserLimitedMessage" value="Your browser does not support frames. We recommend that you update your browser to a version that supports frames."></element>
+		<element name="SuggestViewNoFrameMessage" value="To view the Help system without frames click on this"></element>
+		<element name="SuggestViewNoFrameMsg2" value="hyperlink."></element>
+		<element name="TopicsNotFound" value="No Topics Found."></element>
+		<element name="CantSearch" value="Cannot search for that phrase."></element>
+		<element name="JS_alert_appletNotLoad" value="Unable to load applet. If you are using an old version of Netscape, the prefs.js file needs to be edited."></element>
+		<element name="JS_alert_colorlimitation" value="WebHelp has detected that your display is set to 16 colors. For full WebHelp support, please set your display to use 256 or more colors."></element>
+		<element name="Blank_topic_text" value="This topic was created by WinHelp Project Conversion Wizard, and is the destination of a missing topic or broken hyperlink."></element>
+		<element name="JS_alert_ProjectLoadingFail" value="Could not load correctly, please click Refresh."></element>
+		<element name="JS_alert_cantLoadProject" value="Can't load project:"></element>
+		<element name="JS_alert_ErrorInLoading" value="Error in Loading navigation component. Please regenerate WebHelp."></element>
+		<element name="JS_alert_LoadXmlFailed" value="Error: Failed to load xml file."></element>
+		<element name="JS_alert_InitDatabaseFailed" value="Error: Failed to initialize database."></element>
+		<element name="JS_alert_NotAllDatabaseInited" value="Warning: Not all databases have been loaded. Some topics will not be found."></element>
+		<element name="JS_alert_InvalidExpression_1" value="The words you typed is not a valid expression."></element>
+		<element name="JS_alert_InvalidExpression_2" value="Click"></element>
+		<element name="JS_alert_InvalidExpression_3" value="Help"></element>
+		<element name="JS_alert_InvalidExpression_4" value="to learn how to use query expression.(To be finished)"></element>
+		<element name="Title" value="Title"></element>
+		<element name="Rank" value="Rank"></element>
+		<element name="Canceled" value="Canceled"></element>
+		<element name="IndexBtnText" value="Go"></element>
+		<element name="FtsBtnText" value="Go"></element>
+		<element name="ToolBarSearchBtnText" value="Go"></element>
+		<element name="InTopicSearchBtnText" value="Go"></element>
+		<element name="SearchLabel" value="Search"></element>
+		<element name="SearchPrompt" value="- Search -"></element>
+		<element name="PreTooltip" value="Previous Topic"></element>
+		<element name="NextTooltip" value="Next Topic"></element>
+		<element name="WebSearch" value="WebSearch"></element>
+		<element name="SyncTocTooltip" value="Sync TOC"></element>
+		<element name="Book" value="Book"></element>
+		<element name="Page" value="Page"></element>
+		<element name="Remote_Page" value="Remote Page"></element>
+		<element name="Show_Navigation_Component" value="Show Navigation Component"></element>
+		<element name="Hide_Navigation_Component" value="Hide Navigation Component"></element>
+		<element name="nls_edit_label" value="Type in your question:"></element>
+		<element name="nls_button_go_hint" value="Go Search"></element>
+		<element name="nls_button_go_text" value="Go"></element>
+		<element name="nls_body_instruction" value="Enter your question in the text box above, then click GO."></element>
+		<element name="nls_body_empty" value="Sorry, we were unable to find a good answer for your question."></element>
+		<element name="IndexSelectTopicTitle" value="Select a Topic"></element>
+		<element name="IndexSelectTopicLabel" value="Select a topic, then click Display"></element>
+		<element name="IndexSelectTopicError" value="Please select a topic."></element>
+		<element name="IndexAlphabetBookmarks" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ"></element>
+		<element name="MergeError1" value="The merged Help system"></element>
+		<element name="MergeError2" value="is using a different language from the master Help system, which will cause the index and full-text search functionality to be disabled in the merged Help system."></element>
+		<element name="PoweredBy" value="Powered by"></element>
+		<element name="GeneratedBy" value="Generated by"></element>
+		<element name="Author" value="Author"></element>
+		<element name="About" value="About"></element>
+		<element name="Print" value="Print"></element>
+	</section>
+	<section name="PrintedDoc">
+		<element name="TableOfContents" value="Table of Contents"></element>
+		<element name="TitlePage" value="Title Page"></element>
+		<element name="ChapterFileNamePrefix" value="Chapter_"></element>
+		<element name="TitlePageFileName" value="Chapter__Title_Page.doc"></element>
+		<element name="CrossReferencePrefix" value="See"></element>
+		<element name="GlossaryHeadingStyleName" value="Glossary Heading"></element>
+		<element name="GlossaryTermStyleName" value="Glossary Term"></element>
+		<element name="GlossaryDefinitionStyleName" value="Glossary Definition"></element>
+		<element name="TitlePageTitleStyleName" value="Title Page Title"></element>
+		<element name="TocPageTitleStyleName" value="Table of Contents Page Title"></element>
+	</section>
+</configuration>

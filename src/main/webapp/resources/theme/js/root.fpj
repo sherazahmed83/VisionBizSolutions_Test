@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhpml majorversion="3" minorversion="0">
+	<folders>
+		<folder>
+			<name>!Language!</name>
+		</folder>
+		<folder>
+			<name>images1</name>
+		</folder>
+	</folders>
+	<topics>
+		<topic>
+			<name>twisties_show_hide.htm</name>
+			<comments></comments>
+			<frameset>0</frameset>
+		</topic>
+	</topics>
+	<folders>
+		<folder>
+			<name>images2</name>
+		</folder>
+	</folders>
+</rhpml>
