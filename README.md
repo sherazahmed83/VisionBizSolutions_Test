@@ -1,9 +1,9 @@
 # VisionBizSolutions_Test
 
-This project is to show the exploration of usage of some Java Serverside technologies including
-1- Spring (Spring Java Based Configuration, Spring MVC, Spring MVC with Rest based service integration)
-2- JPA
-3- Hibernate
+This project is to show the exploration of usage of some Java Serverside technologies including<br/>
+1- Spring (Spring Java Based Configuration, Spring MVC, Spring MVC with Rest based service integration)<br/>
+2- JPA<br/>
+3- Hibernate<br/>
 
 And some other tools and technologies including
 1- JQuery (Forms Validation, AJAX, and Rest based service integration)
