@@ -6,7 +6,7 @@
 <br/>
 <h3>Project Details</h3>
 This project is to show the exploration of usage of some Java Serverside technologies including<br/>
-1- Spring (Spring Java Based Configuration, Spring MVC, Spring MVC with Rest based service integration)<br/>
+1- Spring (Spring Java Based Configuration, Spring MVC, Spring Security, Spring MVC with Rest based service integration)<br/>
 2- JPA<br/>
 3- Hibernate<br/>
 <br/>
